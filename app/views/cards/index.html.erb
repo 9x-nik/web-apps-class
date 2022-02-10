@@ -1,0 +1,21 @@
+<%
+ranks = [2, 3, 4, 5, 6, 7, 8, 9, 10, "ace", "jack", "king", "queen"]
+suits = ["clubs", "diamonds", "hearts", "spades"]
+
+rank1 = ranks.sample
+suit1 = suits.sample
+
+rank2 = ranks.sample
+suit2 = suits.sample
+%>
+
+<h1>Shuffle the cards</h1>
+
+<p>
+    <img src="/images/cards/<%= rank1 %>_of_<%= suit1 %>.svg">
+    <img src="/images/cards/<%= rank2 %>_of_<%= suit2 %>.svg">
+</p>
+
+<p>
+    <a href="/cards">Shuffle!</a>
+</p>

@@ -1,0 +1,24 @@
+<%= fillings = ["Cheese", "sauce", "veggies", "beefy"] %> 
+
+<% # this is a comment in ruby %>
+
+
+
+<h1>My taco recipe</h1>
+
+<ul>
+     <% for filling in fillings %>
+        <li><%= filling %></li>
+    <% end %>
+</ul>
+
+<ul>
+<li>Al Pastor</li>
+<li>Salt</li>
+<li>Pepper</li>
+<li>Bones</li>
+<li>Leaf</li>
+<li>Shards</li>
+</ul>
+
+<p>Currently there are <%= fillings.size %> kinds of tacos</p>
